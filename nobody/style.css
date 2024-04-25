@@ -1,0 +1,81 @@
+:root {
+  --bg: rgba(242, 232, 223, 1);
+  --fg: rgba(247, 248, 250, 1);
+  --highlight: rgba(242, 177, 98, 1);
+  --green: rgba(133, 165, 156, 1);
+  --brown: rgba(242, 198, 193, 1);
+  --salmon: rgba(242, 133, 133, 1);
+  --font-size: 1.3rem;
+  --mono: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  --sans: Tahoma, Verdana, Segoe, sans-serif;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans);
+  background-color: var(--bg);
+  color: var(--fg);
+  font-size: var(--font-size);
+}
+h1, h2, h3 {
+  margin: 0;
+}
+
+#introduction {
+  padding-bottom: 10rem;
+}
+#introduction p {
+  font-size: 1rem;
+  line-height: 1.5; /* it’s a proportion; leave off units of measure */
+}
+#introduction .name {
+  font-family: var(--mono);
+}
+.name span {
+  font-family: var(--sans);
+  font-size: 4rem;
+  color: var(--green);
+  display: block;
+}
+#introduction h2 {
+  font-size: 4rem;
+  font-weight: normal;
+}
+
+nav {
+  font-family: var(--mono);
+  font-size: 80%;
+  padding: 1rem;
+}
+nav h1 a {
+  font-family: var(--sans);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+nav li:first-child {
+  flex-basis: 100%; /* flex: 0 0 100%; is also valid code */
+}
+nav a {
+  color: var(--bg);
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  color: var(--salmon);
+}
