@@ -80,6 +80,10 @@ nav a:hover {
   color: var(--salmon);
 }
 
+footer {
+  text-align: center;
+}
+
 @media (min-width: 850px) {
   nav {
     max-width: 1200px;
