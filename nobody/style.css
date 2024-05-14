@@ -156,11 +156,26 @@ footer {
     order: 1;
     text-align: right;
   }
+  #projects {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  #projects .reverse .text {
+      grid-column: 1 / 7;
+      order: 2;
+      text-align: left;
+  }
   #projects img {
     grid-column: 1 / 6;
     grid-row: 1 / 2;
   }
+  #projects .reverse img {
+      grid-column: 6 / 11;
+  }
   #projects ul {
     justify-content: flex-end;
+  }
+  #projects .reverse .text ul {
+      justify-content: flex-start;
   }
 }
